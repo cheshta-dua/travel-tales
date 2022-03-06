@@ -59,3 +59,47 @@
     .container {
         padding: 2px 16px;
     }
+
+
+    #cf img {
+        width: 93%;
+        height: 85%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 40px;
+        margin-top: 80px;
+        align-items: center;
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite; 
+        animation-duration: 6s;
+        animation-direction: alternate; 
+        position:absolute;
+    }
+    
+    #cf img:nth-of-type(1) {
+        animation-delay: 5s;
+    }
+    
+    #cf img:nth-of-type(2) {
+        animation-delay: 3s;
+    }
+    
+    #cf img:nth-of-type(3) {
+        animation-delay: 1s;
+    }
+    
+    @keyframes cf3FadeInOut {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
